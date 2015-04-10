@@ -8,4 +8,4 @@ RUN apt-get install -y mesosphere
 
 EXPOSE 5050
 
-CMD ["mesos-master", "--work_dir=/var/log/mesos"]
+CMD ["mesos-master", "--quorum=2", "--work_dir=/var/log/mesos"]
