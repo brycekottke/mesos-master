@@ -8,4 +8,4 @@ RUN apt-get install -y mesosphere
 
 EXPOSE 5050
 
-CMD ["mesos-master", "--cluster=dev", "--credentials=credentials.txt", --work_dir=/var/log/mesos"]
+CMD ["mesos-master", "--cluster=dev --work_dir=/var/log/mesos"]
