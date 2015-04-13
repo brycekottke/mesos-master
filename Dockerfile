@@ -7,7 +7,5 @@ RUN echo "deb http://repos.mesosphere.io/ubuntu/ trusty main" > /etc/apt/sources
 RUN apt-get install -y mesosphere
 
 EXPOSE 5050
-EXPOSE 8080
 
 CMD ["mesos-master", "--work_dir=/var/log/mesos"]
-CMD ["marathon"]
